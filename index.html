@@ -9,31 +9,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/ace8638943.js" crossorigin="anonymous"></script>
+    <style>
+      .font-Manrope{
+          font-family: 'Manrope', sans-serif;
+      }
+    </style>
 </head>
-<body>
-    <header>
+<body class="font-Manrope">
+    <header class="container mx-auto">
       <!-- navbar -->
-        <div class="navbar bg-base-100">
-            <div class="flex-1">
-                <a class="btn btn-ghost text-xl">daisyUI</a>
-              </div>
-              <div class="navbar-center">
-                <a class="text-xl btn btn-ghost">Home</a>
-                <a class="">Home</a>
-                <a class="">Home</a>
-                <a class="">Home</a>
-                <a class="">Home</a>
-              </div>
-              <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                  </button>
-                  <a class="btn">Button</a>
-              </div>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-red-500">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl text-[#FF4240]">Hockey's</a>
         </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+              <li><a class="text-red-500">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <i class="fa-solid fa-magnifying-glass text-[#89898B]"></i>
+            </button>
+            <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+        </div>
+      </div>
     </header>
-    <main>
+    <main class="container mx-auto">
         <!-- carousel -->
         <section>
             <div>
@@ -307,9 +327,142 @@
             <p>"Contact us for inquiries, collaboration, or assistance. We welcome your messages and feedback with gratitude."</p>
           </div>
         </section>
+        <!-- card % form -->
+        <section>
+          <div class="flex">
+            <!-- card -->
+          <div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="Images/Group 1171275317.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div>
+                <label class="form-control w-full max-w-xs">
+                  <div class="label">
+                    <span class="label-text">Phone Number : </span>
+                  </div>
+                  <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                </label>
+              </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="Images/Group 1171275318.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div>
+                <label class="form-control w-full max-w-xs">
+                  <div class="label">
+                    <span class="label-text">Email :</span>
+                  </div>
+                  <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                </label>
+              </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="Images/Group 1171275321.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div>
+                <label class="form-control w-full max-w-xs">
+                  <div class="label">
+                    <span class="label-text">Location : </span>
+                  </div>
+                  <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- form -->
+          <div>
+            <div class="flex">
+              <div>
+                <label class="form-control w-full max-w-xs">
+                  <div class="label">
+                    <span class="label-text">What is your name?</span>
+                  </div>
+                  <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs" />
+                </label>
+              </div>
+              <div>
+                <label class="form-control w-full max-w-xs">
+                  <div class="label">
+                    <span class="label-text">What is your name?</span>
+                  </div>
+                  <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs" />
+                </label>
+              </div>
+            </div>
+            <div class="flex">
+              <div>
+                <label class="form-control w-full max-w-xs">
+                  <div class="label">
+                    <span class="label-text">What is your name?</span>
+                  </div>
+                  <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs" />
+                </label>
+              </div>
+              <div>
+                <label class="form-control w-full max-w-xs">
+                  <div class="label">
+                    <span class="label-text">What is your name?</span>
+                  </div>
+                  <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs" />
+                </label>
+              </div>
+            </div>
+            <div>
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text">What is your name?</span>
+                </div>
+                <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs" />
+              </label>
+            </div>
+          </div>
+          <button class="">Send Message</button>
+         </div>
+        </section>
+        <!-- social media -->
+        <section>
+          <div class="text-center align-center">
+            <h3 class="text-2xl">Social Media</h3>
+            <div>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer p-10 bg-black text-zinc-400">
+      <nav>
+        <header class="footer-title">Get In Touch</header> 
+        <p>"Connect with us for inquiries, collaboration, or assistance. <br> We value your communication and look forward to it."</p>
+      </nav>
+      <nav>
+        <header class="footer-title">Company</header> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Leadership</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">News & Article</a>
+        <a class="link link-hover">Legal Notice</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Support</header> 
+        <a class="link link-hover">Help Center</a>
+        <a class="link link-hover">FAQ</a>
+        <a class="link link-hover">Ticket Support</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Services</header> 
+        <a class="link link-hover">Academy</a>
+        <a class="link link-hover">Group Lesson</a>
+        <a class="link link-hover">Private Lesson</a>
+        <a class="link link-hover">Hockeys for kids</a>
+        <a class="link link-hover">Hockeys for Adult</a>
+      </nav>
     </footer>
 </body>
 </html>
